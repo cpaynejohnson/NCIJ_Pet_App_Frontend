@@ -1,5 +1,5 @@
 import React from 'react';
-import Dog from './Dog';
+import Dog from './dog';
 
 function DogsList(props) {
     //maps through list of dogss, creating a component for each
