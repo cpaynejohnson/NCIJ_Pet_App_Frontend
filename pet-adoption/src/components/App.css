@@ -24,6 +24,11 @@
   color: white;
 }
 
+.Card-custom {
+  background-color: darkblue !important;
+  align-items: center;
+}
+
 .App-link {
   color: #61dafb;
 }
