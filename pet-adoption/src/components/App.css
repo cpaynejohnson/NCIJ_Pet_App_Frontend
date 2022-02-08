@@ -24,10 +24,7 @@
   color: white;
 }
 
-.Card-custom {
-  background-color: darkblue !important;
-  align-items: center;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -40,4 +37,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Project CSS */
+
+
+.logo-slogan{
+  
+  display:flex
+}
+.slogan-margin{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.slogan-italic{
+  margin-top:35px;
+  font-style:italic;
+}
+
+.logo-b-margin{
+  margin-bottom:0px;
+}
+
+.Card-custom {
+  background-color: darkblue !important;
+  align-items: center;
 }
