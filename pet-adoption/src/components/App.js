@@ -3,7 +3,10 @@ import DogsList from './DogsList';
 import DogDetail from './DogDetail';
 import Header from './Header';
 import Logo from './Logo';
+import Card1 from './Card1';
+import Footer from './Footer';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 //importing Routes and Route components from react-router-dom
@@ -44,12 +47,14 @@ function App() {
     <div className="App">
       <Header/>
       <Logo/>
+      <Card1/>
 
         <Routes>
           <Route path='/' element={<DogsList dogs={dogs}/>}/>
           <Route path='/dogs' element={<DogsList dogs={dogs}/>}/>
           <Route path='/dogs/:id' element={<DogDetail/>}/>
         </Routes>
+      <Footer/>
     </div>
   );
 }
