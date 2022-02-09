@@ -5,14 +5,14 @@ import './App.css';
 function Card1() {
     return (
 
-    <main>
-      <Row>
-        <Card className="Card-custom text-white text-center my-5 py-4">
+    <main class= "card1-width">
+      <Row >
+        <Card className="Card-custom text-white text-center mb-4">
           <Card.Body>
           <div> 
-            <h1>
-            All Pets Currently Available for Adoption<Badge></Badge>
-            </h1>
+            <h4>
+            All Pets Currently Available for Adoption
+            </h4>
           </div>
           </Card.Body>
         </Card>
