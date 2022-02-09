@@ -4,6 +4,7 @@ import DogDetail from './DogDetail';
 import Header from './Header';
 import Logo from './Logo';
 import Card1 from './Card1';
+import SearchBar from './SearchBar';
 import Footer from './Footer';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -48,12 +49,13 @@ function App() {
       <Header/>
       <Logo/>
       <Card1/>
-
+      <SearchBar/>
         <Routes>
           <Route path='/' element={<DogsList dogs={dogs}/>}/>
           <Route path='/dogs' element={<DogsList dogs={dogs}/>}/>
           <Route path='/dogs/:id' element={<DogDetail/>}/>
         </Routes>
+        
       <Footer/>
     </div>
   );
