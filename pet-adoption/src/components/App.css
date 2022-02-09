@@ -24,8 +24,6 @@
   color: white;
 }
 
-
-
 .App-link {
   color: #61dafb;
 }
@@ -38,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 /* Project CSS */
 
@@ -64,3 +63,15 @@
   background-color: darkblue !important;
   align-items: center;
 }
+=======
+/* ******************************* */
+
+.Card-custom {
+    background-color: rgb(1, 7, 92) !important;
+    align-items: center;
+  }
+.Head {
+    background-color: rgb(1, 7, 92) !important;
+    
+  }
+
