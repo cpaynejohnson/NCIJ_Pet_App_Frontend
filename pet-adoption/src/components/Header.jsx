@@ -1,13 +1,13 @@
 import React from 'react';
 import {Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import './App.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
     return (
-        <div className="App">
+        <div className="Head">
           <header>
-            <Navbar bg="dark" variant="dark" expand="lg">
+            <Navbar variant="dark" expand="lg">
             <Container>
               <Navbar.Brand href="#home">NCIJ Pet Adoptions</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
