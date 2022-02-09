@@ -24,8 +24,6 @@
   color: white;
 }
 
-
-
 .App-link {
   color: #61dafb;
 }
@@ -38,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 /* Project CSS */
 
@@ -107,6 +106,7 @@
 .search-dropdown-container{
   display: flex; 
   align-items: center;
+
   justify-content: space-evenly;
   width: 50%;
   height: 30%;
@@ -116,5 +116,17 @@
   position: relative;
   top: 55px;  
 }
+
+
+/* ******************************* */
+
+.Card-custom {
+    background-color: rgb(1, 7, 92) !important;
+    align-items: center;
+  }
+.Head {
+    background-color: rgb(1, 7, 92) !important;
+    
+  }
 
 
