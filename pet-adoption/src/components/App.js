@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import {Container} from 'react-bootstrap';
+import React from 'react';
 import Home from './Home';
 import DogsList from './DogsList';
 import DogDetail from './DogDetail';
+import Breed from './Breed';
+import Color from './Color';
+import Size from './Size';
+import Gender from './Gender';
 import Header from './Header';
 import Footer from './Footer';
 import './App.css';
@@ -25,6 +28,10 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/dogs' element={<DogsList/>}/>
           <Route path='/dogs/:id' element={<DogDetail/>}/>
+          <Route path='/breed/:breed' element={<Breed/>}/>
+          <Route path='/color/:color' element={<Color/>}/>
+          <Route path='/size/:size' element={<Size/>}/>
+          <Route path='/gender/:gender' element={<Gender/>}/>
         </Routes>
         </div>
       <Footer/>
