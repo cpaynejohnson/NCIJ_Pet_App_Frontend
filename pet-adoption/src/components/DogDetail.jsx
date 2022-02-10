@@ -34,7 +34,7 @@ function DogDetail() {
         ? 
         <div className='DogDetail'>
             <h2 id="dog-name">{dogState.name}</h2>
-            <img className="dog-img" src={dogState.image} alt={dogState.name} />
+            <img className="dog-img" style= {{width:'700px'}} src={dogState.image} alt={dogState.name} />
             <br/>
             <br/>
             <button id="see-detail-btn" >See Details</button>
