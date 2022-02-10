@@ -1,12 +1,33 @@
 import React from 'react';
 import {Dropdown, DropdownButton, ButtonGroup, Row, Col} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
+function SearchBar(props) {
+  // console.log(props)
+  // console.log(props.dogs)
+const breedArray=[];
+const colorArray=[];
+const sizeArray=[];
+const genderArray=[];
 
-function SerachBar() {
+props.dogs.map((dog)=>{
+    if(!breedArray.includes(dog.breed)){
+      breedArray.push(dog.breed)
+    }
+    if(!colorArray.includes(dog.color)){
+      colorArray.push(dog.color)
+    }
+    if(!sizeArray.includes(dog.size)){
+      sizeArray.push(dog.size)
+    }
+    if(!genderArray.includes(dog.gender)){
+      genderArray.push(dog.gender)
+    }
+})
     return (
+
       <div className="searchbar-container">
         <Row>
-       
           <Col xs={12} lg={6}>
           <div className="search-header-container">
             <h5 class="search-header">Search the Perfect Pet</h5>
@@ -24,10 +45,12 @@ function SerachBar() {
               variant="light"
               title="Breed..."
               >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+              {breedArray.map((breed,index)=>{
+                return(
+                  <Dropdown.Item eventKey={index}> <Link to={`/breed/${breed}`}>{breed}</Link></Dropdown.Item>
+                )
+
+              })}
               </DropdownType>
         ))} 
           </Col>
@@ -42,10 +65,12 @@ function SerachBar() {
               variant="light"
               title="Color...."
               >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+             {colorArray.map((color,index)=>{
+                return(
+                  <Dropdown.Item eventKey={index}> <Link to={`/color/${color}`}>{color}</Link></Dropdown.Item>
+                )
+
+              })}
               </DropdownType>
         ))} 
           </Col>
@@ -60,10 +85,12 @@ function SerachBar() {
               variant="light"
               title="Size......."
               >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+              {sizeArray.map((size,index)=>{
+                return(
+                  <Dropdown.Item eventKey={index}> <Link to={`/size/${size}`}>{size}</Link></Dropdown.Item>
+                )
+
+              })}
               </DropdownType>
         ))} 
           </Col>
@@ -78,10 +105,12 @@ function SerachBar() {
               variant="light"
               title="Gender"
               >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+              {genderArray.map((gender,index)=>{
+                return(
+                  <Dropdown.Item eventKey={index}> <Link to={`/gender/${gender}`}>{gender}</Link></Dropdown.Item>
+                )
+
+              })}
               </DropdownType>
         ))} 
           </Col>
@@ -98,6 +127,8 @@ function SerachBar() {
 
       
     );
+ 
 }
 
-export default SerachBar;
+
+export default SearchBar;
