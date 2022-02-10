@@ -63,7 +63,7 @@
 }
 
 .Card-custom {
-  background-color: rgb(1, 7, 92) !important;
+  background-color: darkblue !important;
   
 }
 .card1-width{
@@ -126,8 +126,16 @@
   margin-top: 90px;
 }
 
+
+/* ******************************* */
+
+.Card-custom {
+    background-color: rgb(1, 7, 92) !important;
+    align-items: center;
+  }
 .Head {
     background-color: rgb(1, 7, 92) !important;
-}
+    
+  }
 
 

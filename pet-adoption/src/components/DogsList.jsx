@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Dog from './Dog';
+import Dog from './dog';
 
 function DogsList(props) {
     //name of the state,
