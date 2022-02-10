@@ -1,6 +1,5 @@
 import React from 'react';
 import {Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
