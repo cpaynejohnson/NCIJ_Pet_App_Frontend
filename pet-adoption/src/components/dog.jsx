@@ -14,7 +14,15 @@ function Dog(props) {
             <Card style={{ width: '100%' }}>
             <Card.Img variant="top" style= {{height:'350px'}} src={props.dog.image} />
             <Card.Body>
+
+                <Card.Title>{props.dog.name}</Card.Title>
+                <Card.Text>
+                {props.dog.tidbit}
+                </Card.Text>
+                <Button href={`/dogs/${props.dog.id}`} variant="primary">Meet {props.dog.name}</Button>
+
             <Card.Title>{props.dog.name}</Card.Title>   
+
             </Card.Body>
             </Card>
         {/* <h2 id="dog-name">{props.dog.name}</h2>
