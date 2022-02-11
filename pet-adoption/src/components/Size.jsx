@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams} from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
 import DogsList from './DogsList';
 
 function Size(props) {
@@ -34,9 +34,15 @@ function Size(props) {
     return (
         sizes
         ? 
-       <DogsList dogs={sizes}/>
+          <div>
+            <DogsList dogs={sizes}/>
+            <br/>
+            <br/>
+            <Link to="/">Back</Link>
+          </div>
         :
         <p>loading..</p>
+       
     );
 }
 

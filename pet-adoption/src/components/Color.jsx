@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams} from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
 import DogsList from './DogsList';
 
 function Color(props) {
@@ -33,9 +33,16 @@ function Color(props) {
   }, [])
 
     return (
+       
         colors
-        ? 
-       <DogsList dogs={colors}/>
+        ?
+        <div> 
+          <DogsList dogs={colors}/>
+          <br/>
+          <br/>
+          <Link to="/">Back</Link>
+
+        </div>
         :
         <p>loading..</p>
     );

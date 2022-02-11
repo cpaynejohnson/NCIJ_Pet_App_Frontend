@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams} from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
 import DogsList from './DogsList';
 
 function Breed(props) {
@@ -34,10 +34,17 @@ function Breed(props) {
 
     return (
         breeds
-        ? 
-       <DogsList dogs={breeds}/>
+        ?
+        <div>
+          <DogsList dogs={breeds}/>
+          <br/>
+          <br/>
+          <Link to="/" >Back</Link>
+        </div> 
+       
         :
         <p>loading..</p>
+        
     );
 }
 
