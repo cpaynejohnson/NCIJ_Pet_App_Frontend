@@ -4,9 +4,9 @@ import { Card, Col, Container, Image, Row } from 'react-bootstrap';
 function Hero(props) {
     return (
         <div>
-            <div class = "logo-slogan ">
+            <div className = "logo-slogan ">
           <Container>
-          <Row className="p-4 my-5" class = "logo-slogan ">
+          <Row className="p-4 my-5" className = "logo-slogan ">
               <Col sm={5}>
                 <Image 
                   src="/images/pets.png" alt="pet-logo" 
@@ -15,12 +15,12 @@ function Hero(props) {
                 />
               </Col> 
               <Col sm={7}  >
-                <h1 class = "slogan-margin">Helping Dogs Find Their "Forever" Home!</h1>
+                <h1 className = "slogan-margin">Helping Dogs Find Their "Forever" Home!</h1>
                
                 {/* <Button>About Us</Button> */}
               </Col>
               <Col sm={12}>
-              <p class = "slogan-margin slogan-italic logo-b-margin">
+              <p className = "slogan-margin slogan-italic logo-b-margin">
                   We have been helping dogs find their home at the end of the rainbow since 2008. 
                 </p>
               </Col>
@@ -28,7 +28,7 @@ function Hero(props) {
       </Container>
         </div>
 
-    <main class= "card1-width">
+    <main className= "card1-width">
       <Row>
         <Card className="Card-custom text-white text-center mb-4">
           <Card.Body>

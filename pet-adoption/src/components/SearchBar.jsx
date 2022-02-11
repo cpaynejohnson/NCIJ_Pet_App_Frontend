@@ -26,18 +26,18 @@ props.dogs.map((dog)=>{
 })
     return (
 
-      <div className="searchbar-container">
+      <div className="Searchbar-container">
         <Row>
           <Col xs={12} lg={6}>
-          <div className="search-header-container">
-            <h5 class="search-header">Search the Perfect Pet</h5>
+          <div className="Search-header-container">
+            <h5 className="Search-header">Search the Perfect Pet</h5>
         </div>
           
         <Row style={{maxWidth: '500px', margin:'0 auto'}}>
           <Col xs={12} sm={6} style={{margin:'10px 0'} }>
         {[DropdownButton,].map((DropdownType, idx) => (
               
-              <DropdownType 
+              <DropdownType
               as={ButtonGroup}
               key={idx}
               id={`dropdown-button-drop-${idx}`}
@@ -47,7 +47,7 @@ props.dogs.map((dog)=>{
               >
               {breedArray.map((breed,index)=>{
                 return(
-                  <Dropdown.Item eventKey={index}> <Link to={`/breed/${breed}`}>{breed}</Link></Dropdown.Item>
+                  <Dropdown.Item  eventKey={index}> <Link className="Dropdown-content" to={`/breed/${breed}`}>{breed}</Link></Dropdown.Item>
                 )
 
               })}
@@ -67,7 +67,7 @@ props.dogs.map((dog)=>{
               >
              {colorArray.map((color,index)=>{
                 return(
-                  <Dropdown.Item eventKey={index}> <Link to={`/color/${color}`}>{color}</Link></Dropdown.Item>
+                  <Dropdown.Item eventKey={index}> <Link className="Dropdown-content" to={`/color/${color}`}>{color}</Link></Dropdown.Item>
                 )
 
               })}
@@ -77,7 +77,7 @@ props.dogs.map((dog)=>{
           <Col xs={12} sm={6} style={{margin:'10px 0'}}>
         {[DropdownButton,].map((DropdownType, idx) => (
               
-              <DropdownType 
+              <DropdownType
               as={ButtonGroup}
               key={idx}
               id={`dropdown-button-drop-${idx}`}
@@ -87,7 +87,7 @@ props.dogs.map((dog)=>{
               >
               {sizeArray.map((size,index)=>{
                 return(
-                  <Dropdown.Item eventKey={index}> <Link to={`/size/${size}`}>{size}</Link></Dropdown.Item>
+                  <Dropdown.Item eventKey={index}> <Link className="Dropdown-content" to={`/size/${size}`}>{size}</Link></Dropdown.Item>
                 )
 
               })}
@@ -107,7 +107,7 @@ props.dogs.map((dog)=>{
               >
               {genderArray.map((gender,index)=>{
                 return(
-                  <Dropdown.Item eventKey={index}> <Link to={`/gender/${gender}`}>{gender}</Link></Dropdown.Item>
+                  <Dropdown.Item eventKey={index}> <Link className="Dropdown-content" to={`/gender/${gender}`}>{gender}</Link></Dropdown.Item>
                 )
 
               })}
@@ -118,8 +118,8 @@ props.dogs.map((dog)=>{
           </Col>
 
           <Col xs={12} lg={6}>
-          <div class="dog-profile-pic ">
-            <img src="/images/dog-profile.png" class= "pro-img-size" alt="dog picture"></img>
+          <div className="dog-profile-pic ">
+            <img src="/images/dog-profile.png" className= "Pro-img-size" alt="dog picture"></img>
         </div>
           </Col>
         </Row>

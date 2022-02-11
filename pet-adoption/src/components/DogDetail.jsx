@@ -41,7 +41,7 @@ function DogDetail() {
             <DogAdoption dog={dogState}/>
             <br/>
             <br/>
-            <Link to="/">Back</Link>
+            <Link to="/" >Back</Link>
             <br/>
             <br/>
         </div>

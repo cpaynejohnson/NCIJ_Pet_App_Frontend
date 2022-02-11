@@ -5,7 +5,7 @@ import './App.css';
 function Card1() {
     return (
 
-    <main class= "card1-width">
+    <main className= "card1-width">
       <Row >
         <Card className="Card-custom text-white text-center mb-4">
           <Card.Body>

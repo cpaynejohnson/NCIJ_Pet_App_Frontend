@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Dog from './dog';
+import Dog from './Dog';
 
 function DogsList(props) {
       return (

@@ -3,9 +3,9 @@ import {Container, Row, Col, Image } from 'react-bootstrap';
 
 function Logo() {
     return (
-        <div class = "logo-slogan ">
+        <div className = "logo-slogan">
           <Container >
-          <Row className="p-4 my-5" class = "logo-slogan ">
+          <Row className="p-4 my-5" class = "logo-slogan">
               <Col sm={5}>
                 <Image 
                   src="/images/pets.png" alt="pet-logo" 
@@ -14,12 +14,12 @@ function Logo() {
                 />
               </Col> 
               <Col sm={7}  >
-                <h1 class = "slogan-margin">Helping Dogs Find Their "Forever" Home!</h1>
+                <h1 className = "slogan-margin">Helping Dogs Find Their "Forever" Home!</h1>
                
                 {/* <Button>About Us</Button> */}
               </Col>
               <Col sm={12}>
-              <p class = "slogan-margin slogan-italic logo-b-margin">
+              <p className = "slogan-margin slogan-italic logo-b-margin">
                   We have been helping dogs find their home at the end of the rainbow since 2008. 
                 </p>
               </Col>
