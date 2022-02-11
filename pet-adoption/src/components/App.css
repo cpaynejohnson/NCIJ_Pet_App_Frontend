@@ -126,4 +126,22 @@
     
   }
 
-
+  .Accordion-container {
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .Accordion-size {
+    width: 70%;
+  }
+  
+  .Accordion-body {
+    text-align: left;
+  }
+  .Accordion-text {
+    font-size: 1.25em;
+  }
+  
