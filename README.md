@@ -1,21 +1,14 @@
 
-# NCIJ-Pet-Adoptions
-  <pre>                  Phone landing page                                              Dog detail page  </pre>
-  <p float="left">
-   <img src="pet-adoption/public/readme-images/Phone-landing-page-wireframe.png" width="500" height="400"/> 
-   <img src="pet-adoption/public/readme-images/Phone-single-dog-wireframe.png" width="500" height="400"/> </p>
-   <pre>                Computer landing page                                              Dog detail page  </pre>
-<p> <img src="pet-adoption/public/readme-images/PC-landing-page-wireframe.png" width="500" height="400"/>
-  <img src="pet-adoption/public/readme-images/PC-single-dog-wireframe.png" width="500" height="400"/> </p>
+# NCIJ-Pet-Adoptions -- Frontend
+
   
-  
-# The goal of this project is to: 
+# Project goals: 
 Create a React App that allows users to view dogs available for adoption.  Users are able to:
 <ol>
 <li>View the photos of the dogs available for adoption.</li>
-<li>View information about the Dogs: Name, Purpose, Breed, Color, Size, Hypoallergenic.</li>
 <li>Search for dogs on the app.</li>
-<li>Be able to get referrals for additional services like lost pets, veterinarians, pet sitters, etc</li>
+<li>Get dog details: Name, Purpose, Breed, Color, Size and Gender.</li>
+<li>Get information about the adoption process.</li>
 </ol>
 
 
@@ -23,7 +16,8 @@ Create a React App that allows users to view dogs available for adoption.  Users
 <ul>
 <li>React</li>
 <li>Javascript</li>
-<li>Bootstrap</li> 
+<li>Bootstrap</li>
+<li>React-Bootstrap</li>
 <li>HTML</li>
 <li>CSS</li>  
 </ul>
@@ -37,15 +31,42 @@ Create a React App that allows users to view dogs available for adoption.  Users
     
     
 # Getting Started
-Created an organization with two repositories (Backend & Fronten). Forked and cloned these repositories: Frontend for React Code (user input) and Backend for Sqlite3, Sequelize, Express Code (database) then run <code class="w3-codespan">npm create-react-app </code> to add the relevant dependencies. Run <code class="w3-codespan">node seed.js</code> to seed the database and confirm tests pass.
-Finally, run <code class="w3-codespan">npm run app.js</code> to run the express server and interact with the Routes using <a href="https://www.postman.com/">Postman</a>.
+Started with an initial plan where we put our various ideas together on a google doc. Created an organization with two repositories (Backend & Frontend). Frontend for React (user input) and Backend for hard coding (database). Initialized and installed tools as well as relevant dependencies. Revised scripts in package.json. Created development branches and testing environments. Created sprints to enable a smooth project planning in Jira. Established the wireframes with draw.io. Distributed tasks between team members.
 
 
-# Planning Process
-The planning process for NJIC-Pet-Adoptions consisted of:
-- Daily Agile Standup meetings lead by the Scrum Master/Product Owner who reviewed our progress and offered suggestions on staying on track movings forward with this project as well as helping to resolve any blockers and completing our Daily Exit Ticket. 
-- As a team we were able to identify the task(s) needed to completed the MVP:
-- We assigned task according to a persons strength for individual task and pared them with another person for strenthening of skill sets.
-- We studied together learning React coding by watching our class Introduction to React video and discussing our misunderstanding with each other. We also continued studying on our own to learn React coding.
-# Contribution Guidelines
-To make suggestions, create a new issue on this repo.
+  <pre>               Phone landing page                                                Dog detail page  </pre>
+  <p float="left">
+   <img src="pet-adoption/public/readme-images/Phone-landing-page-wireframe.png" width="500" height="400"/> 
+   <img src="pet-adoption/public/readme-images/Phone-single-dog-wireframe.png" width="500" height="400"/> </p>
+   
+   <pre>               Computer landing page                                             Dog detail page  </pre>
+<p><img src="pet-adoption/public/readme-images/PC-landing-page-wireframe.png" width="500" height="400"/>
+  <img src="pet-adoption/public/readme-images/PC-single-dog-wireframe.png" width="500" height="400"/> </p>
+  
+  <pre>           Agile / Kanban board / Sprint1                                 Agile / Kanban board / Sprint2  </pre>
+<p><img src="pet-adoption/public/readme-images/Board1.png" width="500" height="400"/>
+  <img src="pet-adoption/public/readme-images/Board2.png" width="500" height="400"/> </p>
+
+# Production
+The planning process for NJIC-Pet-Adoptions at the frontend consisted of: 
+- Each team member did Daily Standup meetings before we started work for that day and Daily Exit Tickets at the end of the day. This was in rotation.
+- Individually and still as a group worked on our assigned tasks.
+- Watched class recordings together to better understand certain concepts for a better realization of our project.
+- Built a solid backend then worked on the frontend structures.
+- Handled debuggings and other issues that came up.
+
+
+# Helpful Resouces
+- [React-Bootstrap](https://www.google.com/search?q=react+bootstrap&rlz=1C5GCEM_enUS979US980&oq=react+boostrap&aqs=chrome.1.69i57j0i10i131i433l2j0i10i433j0i10i131i433l2j0i10j0i10i131i433l2j0i10.4768j0j15&sourceid=chrome&ie=UTF-8)
+- [Stack Overflow](https://www.google.com/search?q=stack+overflow&rlz=1C5GCEM_enUS979US980&ei=cy_EYamXBOnD_Qa6qpTQCw&oq=stac&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCAAQsQMQQzIHCAAQsQMQQzIICC4QgAQQsQMyCAguEIAEELEDMggIABCABBCxAzILCC4QgAQQxwEQrwEyCAguEIAEELEDMggIABCABBCxAzIECAAQQzIECAAQQzoFCAAQgAQ6BQguEIAEOggILhCxAxCDAToOCC4QgAQQsQMQxwEQ0QM6CwguEIAEEMcBENEDOgsIABCABBCxAxCDAToOCC4QgAQQsQMQxwEQowI6CAgAELEDEIMBOgsIABCABBCxAxDJAzoFCAAQkgNKBAhBGABKBAhGGABQAFjwB2DkGGgAcAJ4AIAB4wKIAbUGkgEHMC4yLjEuMZgBAKABAcABAQ&sclient=gws-wiz)
+- [Pexels](https://www.pexels.com/)
+- [Unsplash](https://unsplash.com/)
+- [YouTube](https://www.google.com/search?q=youtube&rlz=1C5GCEM_enUS979US980&ei=4y_EYaCSH6ivggfj05yYCA&ved=0ahUKEwjgj-Wdvfn0AhWol-AKHeMpB4MQ4dUDCA4&uact=5&oq=youtube&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIAEELEDEIMBEMcBENEDMgUIABCABDIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIECAAQAzIICAAQgAQQsQMyCAgAEIAEELEDMgsIABCABBCxAxCDATIICAAQgAQQsQM6BQgAEJECOggILhCABBCxAzoLCC4QgAQQsQMQgwE6CwguEIAEEMcBEK8BOggIABCxAxCDAToFCC4QgAQ6CwguEIAEEMcBENEDOgcILhCxAxBDOgQIABAKOgcIABCxAxAKOgQILhAKOhMILhCxAxCDARCxAxDHARDRAxAKOgYIABAKEAM6CggAELEDEIMBEAo6EAguELEDEIMBEMcBENEDEApKBAhBGABKBAhGGABQAFjQM2CwOmgGcAJ4AIABwQKIAYcRkgEHMS45LjIuMZgBAKABAcABAQ&sclient=gws-wiz)
+
+# Team members
+<ol>
+<li>Jannatul Diba</li>
+<li>Crystal Johnson</li>
+<li>Irene Bowers</li>
+<li>Nadege Tenku</li>
+</ol>
