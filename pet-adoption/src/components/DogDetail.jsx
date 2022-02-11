@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import { Link, useParams } from "react-router-dom";
+import DogAdoption from './DogAdoption';
 
 function DogDetail() {
     //get the id from the Route parameters
@@ -37,7 +38,7 @@ function DogDetail() {
             <img className="dog-img" style= {{width:'700px'}} src={dogState.image} alt={dogState.name} />
             <br/>
             <br/>
-            <button id="see-detail-btn" >See Details</button>
+            <DogAdoption dog={dogState}/>
             <br/>
             <br/>
             <Link to="/">Back</Link>
