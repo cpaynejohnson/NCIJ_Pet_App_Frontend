@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams} from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
 import DogsList from './DogsList';
 
 function Gender(props) {
@@ -35,7 +35,12 @@ function Gender(props) {
     return (
         genders
         ? 
-       <DogsList dogs={genders}/>
+        <div>
+          <DogsList dogs={genders}/>
+          <br/>
+          <br/>
+          <Link to="/">Back</Link>
+        </div>
         :
         <p>loading..</p>
     );

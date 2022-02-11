@@ -98,11 +98,11 @@
 .Search-header{
   border:1px solid;
   border-radius: 10px;
-  height:80px;
+  height:95px;
   width:382px;
   background-color:#70cf36;;
   color:white;
-  padding-top: .2in;
+  padding-top: .25in;
   text-align: center;
 
 }
