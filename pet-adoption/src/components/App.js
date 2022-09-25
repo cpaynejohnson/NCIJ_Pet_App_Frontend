@@ -28,7 +28,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/dogs' element={<DogsList/>}/>
           <Route path='/dogs/:id' element={<DogDetail/>}/>
-          <Route path='/breed/:breed' element={<Breed/>}/>
+          <Route path='/breed/:breed' element={<Breed/>}/> 
           <Route path='/color/:color' element={<Color/>}/>
           <Route path='/size/:size' element={<Size/>}/>
           <Route path='/gender/:gender' element={<Gender/>}/>
