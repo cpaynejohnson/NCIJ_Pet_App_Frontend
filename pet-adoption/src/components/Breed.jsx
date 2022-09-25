@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { Link, useParams} from "react-router-dom";
 import DogsList from './DogsList';
@@ -49,56 +48,4 @@ function Breed(props) {
     );
 }
 
-=======
-import React, { useState, useEffect } from 'react';
-import { Link, useParams} from "react-router-dom";
-import DogsList from './DogsList';
-
-function Breed(props) {
-
-     //get the id from the Route parameters
-     let { breed } = useParams();
-    console.log(breed);
-    //name of the state,
-    //function that sets state,
-    const [breeds, setBreeds]=useState([])
-
-  //function to fetch dogs and store in state
-  async function fetchBreeds(){
-    try{
-        const response = await fetch(`http://localhost:3000/breed/${breed}`, {
-          method: 'GET'
-        });
-        const responseJSON = await response.json()
-        console.log(responseJSON);
-        //updates state with dog list
-        setBreeds(responseJSON.dogByBreed)
-        } catch(err) {
-      console.log(err)
-      }
-    }
-    
-
-  //upon initial render, run the fetchBreeds() function
-  useEffect(() => {
-    fetchBreeds()
-  }, [])
-
-    return (
-        breeds
-        ?
-        <div>
-          <DogsList dogs={breeds}/>
-          <br/>
-          <br/>
-          <Link to="/" >Back</Link>
-        </div> 
-       
-        :
-        <p>loading..</p>
-        
-    );
-}
-
->>>>>>> f09eac3e5d628391de02cf0a91e2cab20a70405a
 export default Breed;
